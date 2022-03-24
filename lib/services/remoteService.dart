@@ -6,7 +6,6 @@ import 'package:http/http.dart' as http;
 
 class RemoteServices {
 
-  
   static Future<List<UserModel>> getData() async {
     final response = await http.get(Uri.parse("https://jsonplaceholder.typicode.com/users"));
     

@@ -48,14 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
           } else if(snapshot.hasData) {
             List<UserModel> data = snapshot.data as List<UserModel>;
             return ListView.builder(
-              // itemCount: users.length ,
               itemCount: data.length,
               itemBuilder: (context, index) {
-                // return Padding(
-                //   padding: const EdgeInsets.all(8.0),
-                //   child: Text("Name:  ${data[index].name}"),
-                // );
-
                 return Padding(
                   padding: const EdgeInsets.all(2.0),
                   child: Card(
